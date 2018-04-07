@@ -23,6 +23,8 @@ type ReposParams struct {
 	Type        string `rc_feature:"query" rc_name:"type"`
 	Sort        string `rc_feature:"query" rc_name:"sort"`
 	Direction   string `rc_feature:"query" rc_name:"direction"`
+	Page        int    `rc_feature:"query" rc_name:"page"`
+	PerPage     int    `rc_feature:"query" rc_name:"per_page"`
 }
 
 type UserReposParams struct {
@@ -30,6 +32,8 @@ type UserReposParams struct {
 	Type      string `rc_feature:"query" rc_name:"type"`
 	Sort      string `rc_feature:"query" rc_name:"sort"`
 	Direction string `rc_feature:"query" rc_name:"direction"`
+	Page      int    `rc_feature:"query" rc_name:"page"`
+	PerPage   int    `rc_feature:"query" rc_name:"per_page"`
 }
 
 type TokenProvider interface {
